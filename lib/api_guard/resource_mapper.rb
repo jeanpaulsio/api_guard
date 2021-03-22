@@ -7,7 +7,7 @@ module ApiGuard
     def initialize(routes_for, class_name)
       @resource_name = routes_for.singularize
       @resource_class = class_name.constantize
-      @resource_instance_name = "@api_guard_#{routes_for}"
+      @resource_instance_name = "@api_guard_user"
     end
   end
 
